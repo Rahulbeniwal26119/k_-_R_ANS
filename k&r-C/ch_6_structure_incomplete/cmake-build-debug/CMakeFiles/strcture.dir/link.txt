@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/strcture.dir/Example_pointer_to_structrure.c.o CMakeFiles/strcture.dir/example_array_structure_keyword_count.c.o CMakeFiles/strcture.dir/exercise_6-1_getword.c.o CMakeFiles/strcture.dir/example_pointers_to_structure.c.o  -o strcture 

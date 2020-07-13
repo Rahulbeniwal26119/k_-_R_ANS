@@ -1,3 +1,0 @@
-/home/rahul/CLionProjects/strcture/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/rahul/CLionProjects/strcture/cmake-build-debug/CMakeFiles/strcture.dir
-/home/rahul/CLionProjects/strcture/cmake-build-debug/CMakeFiles/edit_cache.dir
