@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/ch_8_Unix_system_interface_.dir/example_lseek.c.o  -o ch_8_Unix_system_interface_ 
