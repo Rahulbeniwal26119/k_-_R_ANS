@@ -1,15 +1,18 @@
 //
 // Created by Rahul on 6/19/2019.
-//
-#include <stdio.h>
-float celsius(float fahr);
-main()
+//#include<stdio.h>
+void  converter(int   lower ,int   upper , float step);
+int main()
 {
-    float fahr;
-    for(fahr=0;fahr<=300;fahr+=20)
-        printf("%f \t %f \n",fahr,celsius(fahr));
+	converter(0 , 300 , 20);
 }
-float celsius(float fahr)
+void  converter(lower , upper , step)
+	int lower , upper;
+	float step;
 {
-    return (5.0/9.0)*(fahr-32);
+	for(int   i=lower; i<=upper; i+=step)
+	{
+		float temp = (5.0/9.0)*((float)i- 32);
+		printf("%5d\t%5.2f\n" , i ,  temp);
+	}
 }

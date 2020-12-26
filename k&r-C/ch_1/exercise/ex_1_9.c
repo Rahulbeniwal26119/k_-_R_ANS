@@ -1,17 +1,23 @@
-//
-// Created by Rahul on 6/18/2019.
-//
-#include <stdio.h>
-#define NONBLANK '\65'
-/* replaces string with many space with a  single space */
-int main() {
-    int c, lastc;
-    lastc = NONBLANK;
-    while ((c = getchar()) != EOF) {
-        if (c != ' ')
-            putchar(c);
-       if (c==' ' && lastc!=' ')          /* else if(lastc!=' ')  putchar(c)*/
-            putchar(c);/* if(c!=' ' || lastc!=' ') putchar c; */
-        lastc = c;
-    }
+#include<stdio.h>
+#define IN 1
+#define OUT 0
+int main()
+{
+	int c;
+	int state = OUT;
+	while((c=getchar())!=EOF)
+	{
+		if(state==OUT)
+		{
+			putchar(c);
+			if(c==' ')
+				state=IN;
+		}
+		else if(state==IN && c!=' ')
+		{
+			putchar(c);
+			state=OUT;
+		}
+
+	}
 }
